@@ -1,3 +1,5 @@
+//accuracy counter
+
 void setup()
 {
   smooth();
