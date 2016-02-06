@@ -1,4 +1,5 @@
 //accuracy counter
+//map - spawn random white dots (stars in background)
 
 void setup()
 {
