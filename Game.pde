@@ -1,5 +1,6 @@
 //accuracy counter
 //map - spawn random white dots (stars in background)
+//highscores
 
 //allows the use of ControlP5
 import controlP5.*;
@@ -39,7 +40,7 @@ void draw()
       background(img);
       fill(0,255,0);
       textSize(72);
-      text("Asteroids!", 550, 100);
+      text("ASTEROIDS", 550, 100);
       textSize(32);
       fill(255);
       text("Press 2 to Play!", 200, 500);
@@ -57,13 +58,24 @@ void draw()
     }
     case 3:
     {
+      background(img);
+      textSize(72);
+      fill(0, 255, 0);
+      text("CONTROLS", 550, 100);
+      textSize(32);
+      fill(0, 255, 0);
+      text("Press A to move to the left!", 400, 300);
+      text("Press D to move to the right!", 400, 400);
+      text("Press J to shoot!", 400, 500);
+      fill(255, 0, 0);
+      text("Press 1 to return to the Main Menu!", 400, 800);
       
       break;
     }
     case 4:
     {
       exit();
-      
+
       break;
     }
     default:
@@ -71,7 +83,8 @@ void draw()
       background(img);
       fill(255,0,0);
       textSize(32);
-      text("Invalid Input!", 600, 600);
+      text("Invalid Input!", 580, 480);
+      text("Press 1 to return to the Main Menu!", 420, 540);
     }
   }
 }
