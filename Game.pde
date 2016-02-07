@@ -13,15 +13,15 @@ AudioPlayer song;
 
 int mode = 1;
 
+PImage img;
+
 void setup()
 {
   smooth();
   frameRate(60);
   size(1500, 900);
-  PImage img;
   img = loadImage("Asteroid Background.jpg");
   img.resize(width, height);
-  background(img);
   
   m = new Minim(this);
   //loads song from the data folder
@@ -36,20 +36,22 @@ void draw()
   {
     case 1:
     {
+      background(img);
       fill(0,255,0);
       textSize(72);
       text("Asteroids!", 550, 100);
       textSize(32);
       fill(255);
       text("Press 2 to Play!", 200, 500);
-      text("Press 3 to Quit!", 900, 500);
-      text("Press 4 to see the Controls!", 500, 500);
+      text("Press 3 to see the Controls!", 900, 500);
+      text("Press 4 to Quit!", 600, 700);
       
       break;
     }
     
     case 2:
     {
+      
       
       break;
     }
@@ -58,15 +60,28 @@ void draw()
       
       break;
     }
+    case 4:
+    {
+      exit();
+      
+      break;
+    }
+    default:
+    {
+      background(img);
+      fill(255,0,0);
+      textSize(32);
+      text("Invalid Input!", 600, 600);
+    }
   }
 }
 
 
-/*void keyPressed()
+void keyPressed()
 {
   if(key>='0' && key<='9')
   {
     mode = key - '0';
   }//end if
   
-}//end keyPressed*/
+}//end keyPressed
