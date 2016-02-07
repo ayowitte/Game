@@ -1,1 +1,1 @@
-class Asteroids
+//class Asteroids

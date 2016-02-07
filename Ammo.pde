@@ -1,1 +1,1 @@
-class Ammo
+//class Ammo
