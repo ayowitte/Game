@@ -16,8 +16,6 @@ int mode = 1;
 
 PImage img;
 
-ArrayList Asteroids;
-
 void setup()
 {
   smooth();
@@ -25,8 +23,6 @@ void setup()
   size(1500, 900);
   img = loadImage("Asteroid Background.jpg");
   img.resize(width, height);
-  
-  Asteroids = new ArrayList();
   
   m = new Minim(this);
   //loads song from the data folder
@@ -58,7 +54,7 @@ void draw()
     case 2:
     {
       
-      
+
       break;
     }
     case 3:
