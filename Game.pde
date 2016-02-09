@@ -1,7 +1,3 @@
-//accuracy counter
-//map - spawn random white dots (stars in background)
-//highscores
-
 //allows audio to be played
 import ddf.minim.*;
 
